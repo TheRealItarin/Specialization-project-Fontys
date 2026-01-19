@@ -1,12 +1,47 @@
-# Specialization-project-Fontys
+# Main Specialization project Fontys
 
 
-This repository mostly responsible to provide access to the products included in this project.
-For now the planned products which will be uploaded here are the following:
+This repository contains all the files and folders mentioned in the documentation for the Main project SAAS. 
+The following list of folders and files are included in the project folder:
 
-- Router, and switch configurations
-- Firewall configurations
-- Docker/container configurations
-- Server configurations
-- Topology for the network
-- List of tools and technologies used, with explanation how I implemented them
+📁 SAAS_project
+├── 📁 Auth_service
+│   ├── instance_manager.py
+│   ├── main,py
+│   └── requirements.txt
+├── 📁 config
+│   └── users.json <-- not included
+├── 📁 dosDoom
+├── 📁 keen
+├── 📁 warcraft
+├── 📁 web
+│   ├── login.html
+│   └── 📁 static
+│       ├── login.js
+│       └── style.css
+├── 00-keyboard.conf
+├── Dockerfile
+├── dosbox.conf
+├── nginx.conf
+└── start,sh
+
+
+- The folder “auth_service” contains the authentication process and session control for the web site, written in python. Plus the requirements.txt which is a list for the required packages to run it
+
+- The “config” folder contains the “users.json” file, which stores the users who can login to the website. Registration is not possible, the only way to get an account is by adding users to this JSON file.
+
+- The “Dockerfile” is used for the building of the container.
+
+- The “dosbox_conf” file is responsible for setting parameters for DOSBox like CPU or display settings and executing startup commands like mounting the Dos directory.
+
+- The “dosDoom” folder is storing the game called “Doom”.
+
+- The “keen” folder is storing the game called “Commander Keen”.
+
+- The “nginx.conf” is the configuration file for nginx.
+
+- The “start.sh” is a script which responsible for orchestrating the entire system startup, with some extra tasks, like setting environment variables for keyboard layout and display settings.
+
+- The “warCraft” folder is storing the game called Warcraft.
+
+- The “web” folder stores a html page with JS and CSS for the login landing page.
