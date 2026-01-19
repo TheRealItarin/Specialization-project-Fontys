@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>secureDos | Login</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <main class="login-card">
+      <h1>secureDos session</h1>
+      <form id="login-form">
+        <label for="username">Username</label>
+        <input id="username" name="username" autocomplete="username" required />
+
+        <label for="password">Password</label>
+        <input
+          id="password"
+          name="password"
+          type="password"
+          autocomplete="current-password"
+          required
+        />
+
+        <button type="submit" id="login-button">Sign In</button>
+        <p class="error" id="error-message"></p>
+      </form>
+      <p class="meta">
+        Need help? Contact the secureDos administrator.
+      </p>
+    </main>
+    <script src="/static/login.js" type="module"></script>
+  </body>
+</html>
+
