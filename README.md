@@ -4,27 +4,7 @@
 This repository contains all the files and folders mentioned in the documentation for the Main project SAAS. 
 The following list of folders and files are included in the project folder:
 
-📁 SAAS_project
-├── 📁 Auth_service
-│   ├── instance_manager.py
-│   ├── main,py
-│   └── requirements.txt
-├── 📁 config
-│   └── users.json <-- not included
-├── 📁 dosDoom
-├── 📁 keen
-├── 📁 warcraft
-├── 📁 web
-│   ├── login.html
-│   └── 📁 static
-│       ├── login.js
-│       └── style.css
-├── 00-keyboard.conf
-├── Dockerfile
-├── dosbox.conf
-├── nginx.conf
-└── start,sh
-
+![folderStructure](/assets/project_folder_structure.png)
 
 - The folder “auth_service” contains the authentication process and session control for the web site, written in python. Plus the requirements.txt which is a list for the required packages to run it
 
